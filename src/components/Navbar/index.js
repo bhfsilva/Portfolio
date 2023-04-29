@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Logo from 'assets/images/BH.svg';
-
 export default function Navbar() {
   const options = ['Sobre mim','Conhecimentos','Projetos'];
   return (
@@ -28,15 +25,14 @@ export default function Navbar() {
         a{
           text-decoration:none;
           color:var(--black);
-          transition:ease-in-out .2s;
         }
         a:hover{
           text-decoration:underline;
         }
       `}</style>
-      <Image priority src={Logo} alt="BH"/>
+      <img src="assets/img/BH.svg" alt="Logo BH"/>
       <nav>
-        <ul>{options.map(opt => (<li><a href="#">{opt}</a></li>))}</ul>
+        <ul>{options.map(opt => (<li key={opt}><a href={`#${opt}`}>{opt}</a></li>))}</ul>
       </nav>  
     </header>
   )

@@ -2,7 +2,10 @@ import Head from 'next/head';
 
 export default function MyApp({Component, pageProps}) {
   return (
-    <>
+    <> 
+      <Head>
+        <title>Portfolio | Bruno Henrique</title>
+      </Head>
       <style global jsx>{`
         :root{
           --yellow:#E8D676;
@@ -17,9 +20,6 @@ export default function MyApp({Component, pageProps}) {
           font-family: 'Roboto Condensed', sans-serif;
         }
       `}</style>
-      <Head>
-        <title>Portfolio | Bruno Henrique</title>
-      </Head>
       <Component {...pageProps}/>
     </>
   )
