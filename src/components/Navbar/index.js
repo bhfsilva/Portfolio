@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 export default function Navbar() {
+  
+  const [showMenu, setShowMenu] = useState(false);
+
   const options = ['Sobre mim','Conhecimentos','Projetos'];
   return (
     <header>
@@ -9,10 +14,20 @@ export default function Navbar() {
           display:flex;
           justify-content:space-between;
           align-items:center;
+          position: relative;
           padding:0px 80px;
         }
-        nav{
-          width:560px;
+        .menu{
+          width:560px;  
+        }
+        .menuButton{
+          display:none;
+          border:none;
+          background-color:transparent;
+          cursor:pointer;
+        }
+        .menuButton img{
+          width:70px;
         }
         ul{
           display:flex;
@@ -29,11 +44,17 @@ export default function Navbar() {
         a:hover{
           text-decoration:underline;
         }
+        .show{
+          right:0;
+        }
       `}</style>
       <img src="assets/img/BH.svg" alt="Logo BH"/>
-      <nav>
-        <ul>{options.map(opt => (<li key={opt}><a href={`#${opt}`}>{opt}</a></li>))}</ul>
-      </nav>  
+      <nav className="menu" >
+        <ul className={`${showMenu?"show":""}`}>{options.map(opt => (<li key={opt}><a href={`#${opt}`}>{opt}</a></li>))}</ul>  
+      </nav>
+      <button className="menuButton">
+        <img src="assets/img/menu.svg" onClick={() => setShowMenu(!showMenu)}/>
+      </button>   
     </header>
   )
 }

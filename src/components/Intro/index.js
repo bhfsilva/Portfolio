@@ -59,7 +59,7 @@ export default function Intro() {
           display:flex;
           justify-content:space-around;
           align-items:center;
-          flex-basis: fit-content;
+          flex-basis:fit-content;
         }
         .info{
           height:80%;
