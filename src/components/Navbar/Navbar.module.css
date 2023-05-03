@@ -61,7 +61,10 @@
     padding: 10px 0px;
   }
 }
-@media(max-width: 490px){
+@media(max-width: 500px){
+  .header{
+    padding: 0 40px;
+  }
   .menu .show{
     height: 190px;
     visibility: visible;

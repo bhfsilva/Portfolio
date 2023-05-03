@@ -4,7 +4,7 @@
   align-items:center;
   flex-flow:row wrap;
   height:80vh;
-  padding: 30px 50px;          
+  padding:30px 50px;
 }
 .leftBox{
   display:flex;
@@ -32,22 +32,21 @@
   align-items:center;
 }
 .info{
-  height:80%;
   display:flex;
   flex-flow:column;
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
-}
-.info img{
-  width:7em;
-}
-.info a{
   text-decoration:none;
   color:var(--black);
   transition:0.3s;
+  height: 200px;
 }
-.info a:hover{
+.info:hover{
   filter:invert(80%) sepia(80%) saturate(268%) brightness(95%) contrast(91%);
+}
+.info img{
+  width:7em;
+  aspect-ratio: 1;
 }
 .info h1{
   font-size:2.3rem;
@@ -61,35 +60,80 @@
     width: 300px;
   }
 }
+@media(max-width: 1096px){
+  .rightBox > h1{
+    font-size:3.3rem;
+  }
+  .info{
+    height: auto;
+  }
+  .info img{
+    width: 5em;
+  }
+}
 @media(max-width: 744px){
   .leftBox{
-    margin-top: 60px;
+    margin-top: 45px;
+  }
+  .rightBox{
+    height: 300px;
   }
   .rightBox > h1{
     font-size:3rem;
   }
-  .rightBox{
-    height: 100px;
-  }
-  .contentBox{
-    flex-direction: column;
-    top: 300px;
-    left: 50px;
-    position: absolute;
-    width: 70px;
-    height: 230px;
-  }
-  .info{
-    background-color: var(--gray);
-    height: 55px;
-    width: 55px;
-    border-radius: 15px;
-  }
-  .info img{
-    width: 40px;
-    margin-top: 3px;
-  }
-  .info h1, .info p{
+  .info p{
     display: none;
   }
 }
+@media(max-width: 500px){
+  .introBox{
+    gap: 20px;
+  }
+  .leftBox{
+    margin-top: initial;
+  }
+  .leftBox img{
+    width: 250px;
+  }
+  .rightBox{
+    height: auto;
+    gap: 20px;
+  }
+  .rightBox > h1{
+    font-size: 2.5rem;
+  }
+  .contentBox{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+  }
+  .info div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: inherit;
+  }
+  .info img{
+    width: 3.6em;
+  }
+  .info p{
+    display: unset;
+  }
+}
+@media (max-width: 415px){
+  .contentBox{
+    gap: 25px;
+  }
+  .info a{
+    align-items: center;
+    width: 250px;
+  }
+  .info p{
+    display: none;
+  }
+} 

@@ -29,13 +29,13 @@ export default function Intro() {
         <h1>Olá, me chamo Bruno Henrique!</h1>
         <div className={styles.contentBox}>
           {info.map(info => (
-            <div className={styles.info} key={info.socialMedia}>
-              <a href={info.link} target="_blank" rel="noreferrer">
-                <img src={info.img}/>
+            <a className={styles.info} key={info.socialMedia} href={info.link} target="_blank" rel="noreferrer">
+              <img src={info.img}/>
+              <div>
                 <h1>{info.socialMedia}</h1>
-              </a>
-              <p>{info.username}</p>
-            </div>
+                <p>{info.username}</p>
+              </div>
+            </a>
           ))}
         </div>
       </div>
