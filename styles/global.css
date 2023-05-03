@@ -1,0 +1,15 @@
+:root{
+  --yellow:#E8D676;
+  --black:#212427;
+  --gray: #F0F0F0;
+  --darker-gray: #D9D9D9;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+}

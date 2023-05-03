@@ -1,0 +1,93 @@
+.header{
+  height:100px;
+  background-color:var(--yellow);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position: relative;
+  padding:0px 80px;
+}
+.menu{
+  width:560px;  
+}
+.menuButton{
+  display:none;
+  border:none;
+  background-color:transparent;
+  height:40px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.menuButton div{
+  height:6px;
+  width:70px;
+  border-radius:20px;
+  border:1px solid var(--black);
+  background-color: var(--black);
+  transition:0.3s;
+}
+.menuButton:hover div:nth-child(2){
+  width:60px;
+}
+.menuButton:hover div:nth-child(3){
+  width:50px;
+}
+.menu ul{
+  display:flex;
+  justify-content:space-around;
+}
+.menu li{
+  list-style:none;
+  font-size:30px;
+}
+.menu a{
+  text-decoration:none;
+  color:var(--black);
+}
+.menu a:hover{
+  text-decoration:underline;
+}
+@media(max-width: 744px){
+  .menu .show{
+    height: 60px;    
+  }
+  .menu ul{
+    position: absolute;
+    top: 100px; 
+    right: 0;
+    display: flex;
+    width: 100%;
+    background-color:rgba(232, 214, 118, 0.5);
+    padding: 10px 0px;
+  }
+}
+@media(max-width: 490px){
+  .menu .show{
+    height: 190px;
+    visibility: visible;
+  }
+  .menu ul{
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .menu li{
+    padding: 10px 0;
+  }
+  .menu li:nth-child(2){
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    padding: 10px 0px;
+  } 
+  .menuButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  } 
+}
