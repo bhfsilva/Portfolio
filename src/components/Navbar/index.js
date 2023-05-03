@@ -24,10 +24,23 @@ export default function Navbar() {
           display:none;
           border:none;
           background-color:transparent;
+          height:40px;
           cursor:pointer;
+          transition:0.3s;
         }
-        .menuButton img{
+        .menuButton div{
+          height:6px;
           width:70px;
+          border-radius:20px;
+          border:1px solid var(--black);
+          background-color: var(--black);
+          transition:0.3s;
+        }
+        .menuButton:hover div:nth-child(2){
+          width:60px;
+        }
+        .menuButton:hover div:nth-child(3){
+          width:50px;
         }
         ul{
           display:flex;
@@ -52,8 +65,8 @@ export default function Navbar() {
       <nav className="menu" >
         <ul className={`${showMenu?"show":""}`}>{options.map(opt => (<li key={opt}><a href={`#${opt}`}>{opt}</a></li>))}</ul>  
       </nav>
-      <button className="menuButton">
-        <img src="assets/img/menu.svg" onClick={() => setShowMenu(!showMenu)}/>
+      <button className="menuButton" onClick={() => setShowMenu(!showMenu)}>
+        {options.map(opt => <div key={opt}/>)}
       </button>   
     </header>
   )

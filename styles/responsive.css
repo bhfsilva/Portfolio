@@ -9,6 +9,7 @@
 }
 body{
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
 }
 @media(max-width: 744px){
   .menu ul{
@@ -24,12 +25,12 @@ body{
 @media(max-width: 490px){
   .menu ul{
     flex-direction: column;
-    top: 100px; 
     padding: 10px 20px;
-    height: 190px;
-    right: 500px;
+    width: 100%;
+    right: -500px;
     transition: 0.3s;
     z-index: 1;
+
   }
   .menu ul li{
     padding: 10px 0;
@@ -40,6 +41,10 @@ body{
     padding: 10px 0px;
   } 
   .menuButton{
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index:2;
   } 
 }
