@@ -21,7 +21,7 @@ export default function Intro() {
     }
   ]
   return (
-    <div className={styles.introBox}>
+    <section className={`${styles.introBox}`}>
       <div className={styles.leftBox}>
         <img src="assets/img/BrunoHenrique.png" alt="Bruno Henrique picture"/>
       </div>
@@ -39,6 +39,6 @@ export default function Intro() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -1,0 +1,55 @@
+.aboutMe h1{
+  display: inline-block;
+  font-size: 2.5em;
+  padding-bottom: 0px;
+  border-bottom: 5px solid var(--yellow);
+}
+.aboutMe{
+  height: 75vh;
+}
+.aboutMe > div{
+  display: flex;
+  gap: 20px;
+}
+.aboutMe img{
+  width: 550px;
+}
+.textBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.textBox p{
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.downloadBox{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.downloadBox h2{
+  font-size: 2.3em;
+  width: auto;
+}
+.downloadBox a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+  width: 260px;
+  background-color: var(--yellow);
+  font-size: 1.2rem;
+  padding: 12px;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  border-radius: 20px;
+}
+.downloadBox a:hover{
+  background-color: #C0B261;
+}
+.downloadBox img{
+  width: 2.3rem;
+}

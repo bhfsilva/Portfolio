@@ -3,8 +3,8 @@
   justify-content:space-around;
   align-items:center;
   flex-flow:row wrap;
-  height:80vh;
-  padding:30px 50px;
+  height:90vh;
+  padding: 30px 40px;
 }
 .leftBox{
   display:flex;
@@ -129,7 +129,7 @@
   .contentBox{
     gap: 25px;
   }
-  .info a{
+  .info{
     align-items: center;
     width: 250px;
   }
