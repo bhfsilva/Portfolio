@@ -1,23 +1,28 @@
+.aboutMe{
+  height: 85vh;
+}
 .aboutMe h1{
   display: inline-block;
   font-size: 2.5em;
   padding-bottom: 0px;
   border-bottom: 5px solid var(--yellow);
 }
-.aboutMe{
-  height: 75vh;
-}
 .aboutMe > div{
   display: flex;
+  justify-content: center;
+  flex-flow: row wrap-reverse;
   gap: 20px;
 }
-.aboutMe img{
-  width: 550px;
+.aboutMe div > img{
+  width: 40%;
+  min-width: 500px;
 }
 .textBox{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  max-width: 700px;
+  height: 500px;
 }
 .textBox p{
   font-size: 1.5em;
@@ -28,17 +33,19 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  width: fit-content;
+  align-self: center;
 }
 .downloadBox h2{
   font-size: 2.3em;
   width: auto;
 }
 .downloadBox a{
+  white-space: nowrap;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--black);
-  width: 260px;
   background-color: var(--yellow);
   font-size: 1.2rem;
   padding: 12px;
@@ -46,10 +53,42 @@
   gap: 20px;
   justify-content: center;
   border-radius: 20px;
+  transition: 0.3s;
 }
 .downloadBox a:hover{
   background-color: #C0B261;
 }
 .downloadBox img{
   width: 2.3rem;
+}
+@media(max-width: 725px){
+  .downloadBox h2{
+    font-size: 2em;
+  }
+}
+@media(max-width: 682px){
+  .downloadBox h2{
+    width: 200px;
+  }
+  .downloadBox{
+    gap: 0px;
+  }
+}
+@media(max-width: 630px){
+  .aboutMe div > img{
+    min-width: 90%;
+  }
+}
+@media(max-width: 560px){
+  .textBox p{
+    font-size: 1.4em;
+  }
+  .downloadBox h2{
+    display: none;
+  }
+}
+@media(max-width: 474px){
+  .textBox p{
+    font-size: 1.3em;
+  }
 }

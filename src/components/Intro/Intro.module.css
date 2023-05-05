@@ -125,7 +125,7 @@
     display: unset;
   }
 }
-@media (max-width: 415px){
+@media (max-width: 465px){
   .contentBox{
     gap: 25px;
   }

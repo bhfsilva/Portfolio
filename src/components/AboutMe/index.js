@@ -2,17 +2,17 @@ import styles from 'src/components/AboutMe/AboutMe.module.css';
 export default function AboutMe() {
   return (
     <section id="Sobre mim" className={`${styles.aboutMe} defaultMargin`}>
-      <h1>Sobre mim</h1>
+      <h1 >Sobre mim</h1>
       <div>
         <div className={styles.textBox}>
           <p>
-            Formado em Técnico em Redes pelo SENAI, comecei a me interessar por desenvolvimento ainda durante o curso quando em uma das disciplinas conheci o shell script.
+            Tenho <b>19 anos</b>, sou formado em <b>Técnico em Redes</b> pelo <b>SENAI</b> e comecei a me interessar por <b>desenvolvimento</b> ainda durante o curso quando em uma das disciplinas conheci o <b>shell script</b>.
           </p>
           <p>
-            Atualmente estou no 2º semestre para ser tecnólogo em Análise e Desenvolvimento de Sistemas pela faculdade FIAP.
+            Atualmente estou no <b>2º semestre</b> para ser <b>tecnólogo</b> em <b>Análise e Desenvolvimento de Sistemas</b> pela faculdade <b>FIAP</b>.
           </p>
           <p>
-            Além disso faço cursos extracurriculares em plataformas como: Fundação Estudar, Udemy e Alura.
+            Além disso faço <b>cursos extracurriculares</b> em plataformas como: <b>Fundação Estudar, Udemy e Alura</b>.
           </p>
           <div className={styles.downloadBox}>
             <h2>Para mais informações:</h2>
