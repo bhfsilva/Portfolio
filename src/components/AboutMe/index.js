@@ -1,8 +1,8 @@
-import styles from 'src/components/AboutMe/AboutMe.module.css';
+import styles from './AboutMe.module.css';
 export default function AboutMe() {
   return (
     <section id="Sobre mim" className={`${styles.aboutMe} defaultMargin`}>
-      <h1 >Sobre mim</h1>
+      <h1 className="contentTitle">Sobre mim</h1>
       <div>
         <div className={styles.textBox}>
           <p>
@@ -17,12 +17,12 @@ export default function AboutMe() {
           <div className={styles.downloadBox}>
             <h2>Para mais informações:</h2>
             <a href='#'>
-              <img src="assets/img/download.svg"/>
+              <img src="assets/img/aboutMe/download.svg" alt="Download icon"/>
               <p>Baixar currículo</p>
             </a>
           </div>
         </div>
-        <img src="assets/img/aboutMe.svg" alt="Drawing of a white man with black hair in a yellow sweater and black pants using the computer"/>
+        <img src="assets/img/aboutMe/aboutMe.svg" alt="Drawing of a white man with black hair in a yellow sweater and black pants using the computer"/>
       </div>
     </section>
   )

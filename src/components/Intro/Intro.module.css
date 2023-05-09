@@ -3,7 +3,7 @@
   justify-content:space-around;
   align-items:center;
   flex-flow:row wrap;
-  height:90vh;
+  height: 90vh;
   padding: 30px 40px;
 }
 .leftBox{
@@ -24,6 +24,10 @@
 .rightBox > h1{
   font-size:3.5rem;
   font-weight:normal;
+}
+.rightBox b{
+  font-weight:normal;
+  background-color: var(--yellow);
 }
 .contentBox{
   width:100%;

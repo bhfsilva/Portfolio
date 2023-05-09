@@ -1,4 +1,4 @@
-import styles from 'src/components/Navbar/Navbar.module.css';
+import styles from './Navbar.module.css';
 
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ export default function Navbar() {
   const options = ['Sobre mim','Conhecimentos','Projetos'];
   return (
     <header className={styles.header}>
-      <img src="assets/img/BH.svg" alt="Logo BH"/>
+      <img src="assets/img/navbar/BH.svg" alt="Logo BH"/>
       <nav className={styles.menu}>
         <ul className={`${showMenu?styles.show:''}`}>
           {options.map(opt => (
