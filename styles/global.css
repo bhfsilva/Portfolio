@@ -16,7 +16,6 @@ body{
 }
 .defaultMargin{ 
   margin: 50px 40px;
-  border: 1px solid;
 }
 .contentTitle{
   display: inline-block;

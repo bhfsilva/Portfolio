@@ -1,0 +1,18 @@
+[
+  {
+    "title":"Projeto Nutri",
+    "image":"assets/img/projects/nutri.png",
+    "url":"https://bhs1lva.github.io/Projeto-Cadastro-Nutricionista/",
+    "desc":["Site para cadastro de pacientes de nutricionista."],
+    "releaseDate":"2022-12-05",
+    "tags":"Front-End"
+  },
+  {
+    "title":"Projeto Portal SP",
+    "image":"assets/img/projects/portalSP.png",
+    "url":"https://bhs1lva.github.io/Projeto-Portal-de-Noticias/",
+    "desc":["Portal de notícias sobre a cidade de São Paulo."],
+    "releaseDate":"2022-12-05",
+    "tags":""
+  }
+]

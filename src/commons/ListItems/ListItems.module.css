@@ -1,61 +1,95 @@
-.mainBox{
-  display: flex;
-  flex-flow: row wrap;
-  gap: 40px;
-  justify-content: center;
-}
+/* General */
 .listBox{
   border: 5px solid var(--yellow);
-  border-radius: 50px;
-  padding: 25px;
+  border-radius: 30px;
+  padding: 20px;
   display: flex;
-  gap: 30px;
-  align-items: center;
-  font-family: 'Roboto Condensed', sans-serif;
-  background: transparent;
-}
-.listBox > img{
-  width: 95px;
-  aspect-ratio: 1;
-}
-.content{
-  display: flex;
-  flex-direction: column;
   gap: 10px;
-  width: 280px;
 }
 .content > h2{
   color: #CAB422;
   font-size: 2.3rem;
 }
-.skillsBox{
-  display: flex;
-  justify-content: space-between;
+/* not clickable */
+.mainBox:has(.skillsBox){
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+  justify-content: center;
+}
+.listBox:is(div){
   text-align: center;
 }
-.skillsBox img {
-  width: 70px;
+.listBox:is(div) > img{
+  width: 60px;
   aspect-ratio: 1;
 }
-@media (max-width: 573px){
-  .listBox{
-    cursor: pointer;
-    gap: 0px;
-    position: relative;
-  }
-  .listBox > img{
-    width: 80px;
-  }
-  .skillsBox{
-    position: absolute;
-    background-color: white;
-    padding: 10px;
-    border-radius: 25px;
-    width: 270px;
-    top: 9px;
-    right: 20px;
-  }
-  .skillsBox img{
-    width: 60px;
-  }
+.listBox:is(div) .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.listBox:is(div) .content button{
+  display: none;
+}
+.skillsBox{
+  display: flex;
+  justify-content: space-evenly;
+}
+.skillsBox div{
+  padding: 0px 15px;
+}
+.skillsBox img {
+  width: 50px;
+  aspect-ratio: 1;
+}
+/* clickable */
+.mainBox:has(a){
+  border: 1px solid royalblue;
+  display: grid;
+  grid-template-columns: 1;
+  gap: 30px;
+  justify-content: center;
+}
+.listBox:is(a){
+  text-decoration: none;
+  transition: 0.3s;
+  gap: 20px;
+  width: fit-content;
+}
+.listBox:is(a:hover){
+  transform: scale(1.1);
+}
+.listBox:is(a) > img{
+  width: 250px;
+  border: 1px solid var(--black);  
+}
+.listBox:is(a) .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+.listBox:is(a) .content p{
+  font-size: 1.7rem;
+  color: var(--black);
+  width: 520px; 
+}
+.listBox:is(a) .content button{
+  position: absolute;
+  top:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  border: 3px solid #CAB422;
+  border-radius: 20px;
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 3px 6px;
+  font-size: 1rem;
+}
+.listBox:is(a) .content button img{
+  width: 40px;
 }

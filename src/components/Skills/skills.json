@@ -18,20 +18,6 @@
     ]
   },
   {
-    "title":"Design",
-    "image":"assets/img/skills/design/designIcon.svg",
-    "desc":[
-      {
-        "title":"Figma",
-        "image":"assets/img/skills/design/figma.svg"
-      },
-      {
-        "title":"Photoshop",
-        "image":"assets/img/skills/design/photoshop.svg"
-      }
-    ]
-  },
-  {
     "title":"DevOps",
     "image":"assets/img/skills/devops/devopsIcon.svg",
     "desc":[
@@ -50,16 +36,26 @@
     ]
   },
   {
+    "title":"Prototipagem",
+    "image":"assets/img/skills/design/designIcon.svg",
+    "desc":[
+      {
+        "title":"Figma",
+        "image":"assets/img/skills/design/figma.svg"
+      },
+      {
+        "title":"Photoshop",
+        "image":"assets/img/skills/design/photoshop.svg"
+      }
+    ]
+  },
+  {
     "title":"Back-end",
     "image":"assets/img/skills/backend/backendIcon.svg",
     "desc":[
       {
         "title":"Python",
         "image":"assets/img/skills/backend/python.svg"
-      },
-      {
-        "title":"Java",
-        "image":"assets/img/skills/backend/java.svg"
       },
       {
         "title":"TypeScript",
