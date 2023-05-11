@@ -36,12 +36,7 @@ export default function Projects() {
 
   return (
     <section className="defaultMargin" id="Projetos">
-      <div className={styles.titleBox}>
-        <h1 className="contentTitle">Projetos</h1>
-        <button>
-          <img src="assets/img/projects/link.svg" title="Change list format"/>
-        </button>
-      </div>
+      <h1 className="contentTitle">Projetos</h1>
       <div className={styles.filterBox}>
         <h2>Filtros:</h2>
         {filters.map((filter, index) => (

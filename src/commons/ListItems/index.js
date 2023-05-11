@@ -1,4 +1,5 @@
 import styles from './ListItems.module.css';
+import { useState } from 'react';
 
 export default function ListItems({source, clickable}) {
   
@@ -7,19 +8,27 @@ export default function ListItems({source, clickable}) {
 
   const linkProps = {target:"_blank", rel:"noreferrer"} 
 
+  const [active, setActive] = useState(false);
+
   return (
-    <div className={styles.mainBox}>     
+    <div className={styles.mainBox}>  
+      <button className={styles.listViewButton} onClick={() => setActive(!active)}>
+        {active?<img src="assets/img/projects/list.svg"/>:<img src="assets/img/projects/grid.svg"/>}
+      </button>
       {source.length
       ?source.map(item => (
-        <div className={styles.element} key={item.title}>
-          <TagName className={styles.listBox} href={isLink?`${item.url}`:undefined} {...isLink && {...linkProps}}>
+        <div key={item.title}>
+          <TagName
+            className={active?`${styles.gridBox}`:`${styles.listBox}`}
+            href={isLink?`${item.url}`:undefined}
+            {...isLink && {...linkProps}}
+          >
             <img src={item.image} alt={`${item.title} icon`}/>
             <div className={styles.content}>
-              <button>
-                Acesse
+              <button className={styles.acessButton}>
                 <img src="assets/img/projects/link.svg"/>
               </button>
-              <h2>{item.title}</h2>
+              <h2 className={styles.title}>{item.title}</h2>
               {isLink
                 ?<p>{item.desc}</p>
                 :<div className={styles.skillsBox}>
