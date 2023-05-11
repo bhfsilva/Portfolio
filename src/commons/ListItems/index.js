@@ -8,18 +8,18 @@ export default function ListItems({source, clickable}) {
 
   const linkProps = {target:"_blank", rel:"noreferrer"} 
 
-  const [active, setActive] = useState(false);
+  const [activeGrid, setActive] = useState(false);
 
   return (
     <div className={styles.mainBox}>  
-      <button className={styles.listViewButton} onClick={() => setActive(!active)}>
-        {active?<img src="assets/img/projects/list.svg"/>:<img src="assets/img/projects/grid.svg"/>}
+      <button className={styles.listViewButton} onClick={() => setActive(!activeGrid)}>
+        {activeGrid?<img src="assets/img/projects/list.svg"/>:<img src="assets/img/projects/grid.svg"/>}
       </button>
       {source.length
       ?source.map(item => (
         <div key={item.title}>
           <TagName
-            className={active?`${styles.gridBox}`:`${styles.listBox}`}
+            className={activeGrid?`${styles.gridBox}`:`${styles.listBox}`}
             href={isLink?`${item.url}`:undefined}
             {...isLink && {...linkProps}}
           >
@@ -28,7 +28,7 @@ export default function ListItems({source, clickable}) {
               <button className={styles.acessButton}>
                 <img src="assets/img/projects/link.svg"/>
               </button>
-              <h2 className={styles.title}>{item.title}</h2>
+              <h2>{item.title}</h2>
               {isLink
                 ?<p>{item.desc}</p>
                 :<div className={styles.skillsBox}>

@@ -1,8 +1,7 @@
 import styles from './AboutMe.module.css';
 export default function AboutMe() {
-  const date = new Date();
-  let age = date.getFullYear() - 2003 - 1;
-  date.getMonth()+1 >= 10?age = date.getFullYear() - 2003:age;
+  const birth = new Date("2003-10-15")
+  const age = new Date(new Date() - birth).getFullYear() - 1970
   return (
     <section id="Sobre mim" className={`${styles.aboutMe} defaultMargin`}>
       <h1 className="contentTitle">Sobre mim</h1>

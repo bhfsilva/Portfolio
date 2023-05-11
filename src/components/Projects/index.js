@@ -33,10 +33,9 @@ export default function Projects() {
       }
     })
   };
-
   return (
     <section className="defaultMargin" id="Projetos">
-      <h1 className="contentTitle">Projetos</h1>
+      <h1 className={`contentTitle ${styles.responsiveTitle}`}>Projetos</h1>
       <div className={styles.filterBox}>
         <h2>Filtros:</h2>
         {filters.map((filter, index) => (
@@ -52,4 +51,4 @@ export default function Projects() {
       <ListItems source={filteredJSON} clickable/>
     </section>
   )
-}
+};

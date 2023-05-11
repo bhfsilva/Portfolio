@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
+  gap: 10px;
 }
 .filterBox h2{
   font-size: 2rem;
@@ -20,4 +22,12 @@
 }
 .filterBox .active{
   background-color: var(--yellow);
+}
+@media(max-width:506px){
+  .filterBox{
+    display: none;
+  }
+  .responsiveTitle{
+    margin-bottom: 30px;
+  }
 }

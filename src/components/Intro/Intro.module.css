@@ -49,7 +49,7 @@
   filter:invert(80%) sepia(80%) saturate(268%) brightness(95%) contrast(91%);
 }
 .info img{
-  width:7em;
+  width: 6.5em;
   aspect-ratio: 1;
 }
 .info h1{

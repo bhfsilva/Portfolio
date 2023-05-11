@@ -5,9 +5,19 @@
   padding: 20px;
   display: flex;
 }
-.title{
+.content > h2{
   color: var(--darker-yellow);
   font-size: 2.1rem;
+}
+.acessButton{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--darker-yellow);
+  border-radius: 20px;
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 3px 6px;
 }
 .errorMessage{
   font-size: 2rem;
@@ -51,7 +61,7 @@
 .mainBox:has(a){
   display: grid;
   grid-template-columns: 1;
-  gap: 25px;
+  gap: 30px;
   position: relative;
   justify-content: center;
 }
@@ -82,9 +92,10 @@
 .listBox:is(a){
   transition: 0.3s;
   gap: 20px;
-  width: fit-content;
+  position: relative;
+
 }
-.listBox:is(a:hover){
+.listBox:is(a:hover), .gridBox:hover{
   transform: scale(1.1);
 }
 :is(.listBox:is(a) > img, .gridBox > img) {
@@ -96,26 +107,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  position: relative;
-}
-.listBox:is(a) .content p{
   font-size: 1.5rem;
   color: var(--black);
   width: 520px; 
 }
-.acessButton{
-  display: flex;
-  align-items: center;
-  border: 3px solid var(--darker-yellow);
-  border-radius: 20px;
-  background-color: var(--yellow);
-  cursor: pointer;
-  padding: 3px 6px;
-}
 .listBox:is(a) .acessButton{
-  position: absolute;
-  top:0;
-  right:0;
+  top: 15px;
+  right: 15px;
   font-size: 1rem;
 }
 .listBox:is(a) .acessButton img{
@@ -147,9 +145,6 @@
   justify-content: space-between;
   flex-direction: column;
 }
-.gridBox:hover{
-  transform: scale(1.1);
-}
 .gridBox .acessButton{
   position: absolute;
   top: 15px;
@@ -158,4 +153,73 @@
 }
 .gridBox .acessButton img{
   width: 40px;
+}
+@media(max-width:940px){
+  .listViewButton{
+    display: none;
+  }
+  .listBox:is(a){
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .listBox:is(a) .content{
+    gap: 6px;  
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    font-size: 1.4rem;
+    justify-content: space-evenly;
+  }
+  .listBox:is(a:hover), .gridBox:hover{
+    transform: scale(1);
+  }
+  :is(.listBox:is(a:hover), .gridBox:hover) .acessButton {
+    background-color: var(--darker-yellow);
+  }
+  .listBox:is(a) .acessButton::before{
+    display: none;
+  }
+}
+@media(max-width:910px){
+  .mainBox:has(.skillsBox){
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media(max-width:550px){
+  .listBox:is(a){
+    width: 300px;
+    gap: 25px;
+  }
+  :is(.listBox:is(a)) .content{
+    width: 230px;
+    margin-bottom: 10px;
+  }
+  .gridBox .content{
+    width: 230px;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:505px){
+  .listBox:is(div) > img{
+    display: none;
+  }
+  .skillsBox img{
+    width: 35px;
+  }
+}
+@media(max-width:425px){
+  .listBox:is(div){
+    width: 250px;
+  }
+  .listBox:is(div) .content{
+    gap: 10px;
+  }
+  .skillsBox div{
+    padding: 0;
+  }
+  .skillsBox h2{
+    font-size: 20px;
+  }
 }
