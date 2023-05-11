@@ -7,14 +7,19 @@
   gap: 10px;
 }
 .content > h2{
-  color: #CAB422;
-  font-size: 2.3rem;
+  color: var(--darker-yellow);
+  font-size: 2.1rem;
+}
+.errorMessage{
+  font-size: 2rem;
+  color: #E81C1C;
+  text-align: center;
 }
 /* not clickable */
 .mainBox:has(.skillsBox){
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 30px;
+  gap: 25px;
   justify-content: center;
 }
 .listBox:is(div){
@@ -49,7 +54,7 @@
   border: 1px solid royalblue;
   display: grid;
   grid-template-columns: 1;
-  gap: 30px;
+  gap: 25px;
   justify-content: center;
 }
 .listBox:is(a){
@@ -83,7 +88,7 @@
   right:0;
   display: flex;
   align-items: center;
-  border: 3px solid #CAB422;
+  border: 3px solid var(--darker-yellow);
   border-radius: 20px;
   background-color: var(--yellow);
   cursor: pointer;

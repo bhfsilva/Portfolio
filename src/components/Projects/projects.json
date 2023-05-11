@@ -1,18 +1,35 @@
 [
   {
-    "title":"Projeto Nutri",
-    "image":"assets/img/projects/nutri.png",
-    "url":"https://bhs1lva.github.io/Projeto-Cadastro-Nutricionista/",
-    "desc":["Site para cadastro de pacientes de nutricionista."],
-    "releaseDate":"2022-12-05",
-    "tags":"Front-End"
+    "title":"Projeto Repo Keeper",
+    "image":"assets/img/projects/repoKeeper.png",
+    "url":"https://projeto-repo-keeper.vercel.app/",
+    "desc":"Guardador de referências a repositórios do GitHub.",
+    "releaseDate":"2023-02-13",
+    "tags":["Front-End", "Back-End"]
+  },
+  {
+    "title":"Portfólio [antigo]",
+    "image":"assets/img/projects/portfolioAntigo.png",
+    "url":"https://bhs1lva.github.io/Portfolio/",
+    "readmeURL":"https://github.com/bhS1lva/Portfolio",
+    "desc":"Meu antigo portfólio para apresentações.",
+    "releaseDate":"2022-09-21",
+    "tags":["Front-End"]
   },
   {
     "title":"Projeto Portal SP",
     "image":"assets/img/projects/portalSP.png",
     "url":"https://bhs1lva.github.io/Projeto-Portal-de-Noticias/",
-    "desc":["Portal de notícias sobre a cidade de São Paulo."],
-    "releaseDate":"2022-12-05",
-    "tags":""
+    "desc":"Portal de notícias sobre a cidade de São Paulo.",
+    "releaseDate":"2022-08-18",
+    "tags":["Front-End"]
+  },
+  {
+    "title":"Projeto Nutri",
+    "image":"assets/img/projects/nutri.png",
+    "url":"https://bhs1lva.github.io/Projeto-Cadastro-Nutricionista/",
+    "desc":"Site para cadastro de pacientes de nutricionista.",
+    "releaseDate":"2022-07-19",
+    "tags":["Front-End"]
   }
 ]

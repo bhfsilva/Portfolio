@@ -1,12 +1,15 @@
 import styles from './AboutMe.module.css';
 export default function AboutMe() {
+  const date = new Date();
+  let age = date.getFullYear() - 2003 - 1;
+  date.getMonth()+1 >= 10?age = date.getFullYear() - 2003:age;
   return (
     <section id="Sobre mim" className={`${styles.aboutMe} defaultMargin`}>
       <h1 className="contentTitle">Sobre mim</h1>
       <div>
         <div className={styles.textBox}>
           <p>
-            Tenho <b>19 anos</b>, sou formado em <b>Técnico em Redes</b> pelo <b>SENAI</b> e comecei a me interessar por <b>desenvolvimento</b> ainda durante o curso quando em uma das disciplinas conheci o <b>shell script</b>.
+            Tenho <b>{age} anos</b>, sou formado em <b>Técnico em Redes</b> pelo <b>SENAI</b> e comecei a me interessar por <b>desenvolvimento</b> ainda durante o curso quando em uma das disciplinas conheci o <b>shell script</b>.
           </p>
           <p>
             Atualmente estou no <b>2º semestre</b> para ser <b>tecnólogo</b> em <b>Análise e Desenvolvimento de Sistemas</b> pela faculdade <b>FIAP</b>.

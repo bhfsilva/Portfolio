@@ -9,7 +9,7 @@ export default function Navbar() {
     <header className={styles.header}>
       <img src="assets/img/navbar/BH.svg" alt="Logo BH"/>
       <nav className={styles.menu}>
-        <ul className={`${showMenu?styles.show:''}`}>
+        <ul className={showMenu?`${styles.show}`:''}>
           {options.map(opt => (
             <li key={opt}>
               <a href={`#${opt}`}>{opt}</a>

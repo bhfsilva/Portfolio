@@ -7,11 +7,10 @@ export default function ListItems({source, clickable}) {
 
   const linkProps = {target:"_blank", rel:"noreferrer"} 
 
-  console.log(source.length)
-
   return (
     <div className={styles.mainBox}>     
-      {source.map(item => (
+      {source.length
+      ?source.map(item => (
         <div className={styles.element} key={item.title}>
           <TagName className={styles.listBox} href={isLink?`${item.url}`:undefined} {...isLink && {...linkProps}}>
             <img src={item.image} alt={`${item.title} icon`}/>
@@ -34,7 +33,8 @@ export default function ListItems({source, clickable}) {
             </div>
           </TagName>
         </div>
-      ))}
+      ))
+      :<h1 className={styles.errorMessage}>{'Nenhum item encontrado'}</h1>}
     </div>
   )
 }

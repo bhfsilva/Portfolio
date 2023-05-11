@@ -12,8 +12,27 @@
   width: 160px;
   font-size: 1.5rem;
   background-color: transparent;
-  border: 3px solid var(--yellow);
+  border: 3px solid var(--darker-yellow);
   border-radius: 20px;
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
+  transition: 0.2s;
+}
+.titleBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleBox button{
+  background-color: var(--yellow);
+  border: 2px solid var(--darker-yellow);
+  border-radius: 10px;
+}
+.titleBox button img{
+  margin-top: 2px;
+  padding: 0px 2px;
+  width: 40px;
+}
+.filterBox .active{
+  background-color: var(--yellow);
 }

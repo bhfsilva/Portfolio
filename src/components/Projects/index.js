@@ -4,33 +4,52 @@ import styles from './Projects.module.css';
 import { useState } from "react";
 
 export default function Projects() {
-  const filters = ['Todos', 'Front-End', 'Back-End', 'Mais novos', 'Mais antigos']
+  const dynamicFilters = [];
+
+  projects.forEach(project => {
+    project.tags.forEach(tag => {
+      if(!dynamicFilters.includes(tag)){
+        dynamicFilters.push(tag)
+      }
+    });
+  });
+
+  const filters = ['Todos', ...dynamicFilters, 'Mais antigos'];
 
   const [filteredJSON, setFilteredJSON] = useState(projects);
 
-  function teste(filter){
-    // setFilteredJSON(projects.filter(project => project.tags.includes(filter)));
-    setFilteredJSON(projects.filter(project => {
-      
-      project.tags.includes(filter)
+  const [active, setActive] = useState(0);
+
+  function filterProjects(filter, index){
+    setActive(index);
+    dynamicFilters.map(dynamicFilter => {
       switch(filter){
-        case 'Front-End':
-        case 'Back-End':
-          return project.tags.includes(filter);
+        case dynamicFilter:
+          return setFilteredJSON([...projects].filter(project => project.tags.includes(filter)));
+        case 'Mais antigos':
+          return setFilteredJSON([...projects].sort((a, b) => a.releaseDate > b.releaseDate?1:-1));
         default:
-          return projects;
+          return setFilteredJSON(projects);
       }
-    }));
-    
-  }
+    })
+  };
 
   return (
     <section className="defaultMargin" id="Projetos">
-      <h1 className="contentTitle">Projetos</h1>
+      <div className={styles.titleBox}>
+        <h1 className="contentTitle">Projetos</h1>
+        <button>
+          <img src="assets/img/projects/link.svg" title="Change list format"/>
+        </button>
+      </div>
       <div className={styles.filterBox}>
         <h2>Filtros:</h2>
-        {filters.map(filter => (
-          <button key={filter} onClick={() => teste(filter)}>
+        {filters.map((filter, index) => (
+          <button
+            key={index}
+            className={active === index?`${styles.active}`:''}
+            onClick={() => filterProjects(filter, index)}
+          >
             {filter}
           </button>
         ))}
