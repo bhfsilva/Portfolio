@@ -93,7 +93,6 @@
   transition: 0.3s;
   gap: 20px;
   position: relative;
-
 }
 .listBox:is(a:hover), .gridBox:hover{
   transform: scale(1.1);
@@ -153,6 +152,11 @@
 }
 .gridBox .acessButton img{
   width: 40px;
+}
+@media(max-width:1024px){
+  .listViewButton{
+    top: -260px;
+  }
 }
 @media(max-width:940px){
   .listViewButton{

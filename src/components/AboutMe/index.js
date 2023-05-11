@@ -18,7 +18,7 @@ export default function AboutMe() {
           </p>
           <div className={styles.downloadBox}>
             <h2>Para mais informações:</h2>
-            <a href='#'>
+            <a href="assets/Bruno Henrique Fernandes da Silva.pdf" download>
               <img src="assets/img/aboutMe/download.svg" alt="Download icon"/>
               <p>Baixar currículo</p>
             </a>

@@ -8,7 +8,7 @@
   padding:0px 80px;
 }
 .menu{
-  width:560px;  
+  width:560px;
 }
 .menuButton{
   display:none;
@@ -48,39 +48,39 @@
   text-decoration:underline;
 }
 @media(max-width: 744px){
-  .menu .show{
-    height: 60px;    
-  }
-  .menu ul{
+  .menu{
     position: absolute;
     top: 100px; 
     right: 0;
     display: flex;
     width: 100%;
     background-color:rgba(232, 214, 118, 0.5);
-    padding: 10px 0px;
+    padding: 10px 0px;  
+  }
+  .menu ul{
+    width: inherit;
+    justify-content: space-around;
   }
 }
 @media(max-width: 500px){
   .header{
     padding: 0 40px;
   }
-  .menu .show{
-    height: 190px;
+  .menu.show{
+    height: 200px;
     visibility: visible;
   }
-  .menu ul{
-    flex-direction: column;
-    padding: 10px 20px;
-    width: 100%;
+  .menu{
     height: 0;
     overflow: hidden;
     visibility: hidden;
-    transition: 0.3s;
+    padding: 0;
+    transition: 0.4s;
     z-index: 1;
   }
-  .menu li{
-    padding: 10px 0;
+  .menu ul{
+    flex-direction: column;
+    padding: 15px 20px;
   }
   .menu li:nth-child(2){
     border-top: 1px solid var(--black);

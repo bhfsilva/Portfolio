@@ -39,6 +39,9 @@ export default function Intro() {
           ))}
         </div>
       </div>
+      <a href="#Sobre mim" className={styles.scrollButton}>
+        <img src="assets/img/intro/chevron.svg"/>
+      </a>
     </section>
   )
 }
