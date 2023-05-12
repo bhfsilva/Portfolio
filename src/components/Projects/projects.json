@@ -10,8 +10,7 @@
   {
     "title":"Portfólio [antigo]",
     "image":"assets/img/projects/portfolioAntigo.png",
-    "url":"https://bhs1lva.github.io/Portfolio/",
-    "readmeURL":"https://bhs1lva.github.io/Portfolio-Antigo/",
+    "url":"https://bhs1lva.github.io/Portfolio-Antigo/",
     "desc":"Meu antigo portfólio usado para apresentações.",
     "releaseDate":"2022-09-21",
     "tags":["Front-End"]
