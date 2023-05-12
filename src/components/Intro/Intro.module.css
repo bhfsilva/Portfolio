@@ -5,6 +5,7 @@
   flex-flow:row wrap;
   height: 720px;
   padding: 30px 40px;
+  position: relative;
 }
 .leftBox{
   display:flex;
@@ -61,7 +62,7 @@
 }
 .scrollButton{
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   border-radius: 50px;
   cursor: pointer;
 }
