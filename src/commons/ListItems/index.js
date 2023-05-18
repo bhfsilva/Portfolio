@@ -13,7 +13,7 @@ export default function ListItems({source, clickable}) {
   return (
     <div className={styles.mainBox}>  
       <button className={styles.listViewButton} onClick={() => setActive(!activeGrid)}>
-        {activeGrid?<img src="assets/img/projects/list.svg"/>:<img src="assets/img/projects/grid.svg"/>}
+        {activeGrid?<img src="/assets/img/projects/list.svg"/>:<img src="/assets/img/projects/grid.svg"/>}
       </button>
       {source.length
       ?source.map(item => (
@@ -26,7 +26,7 @@ export default function ListItems({source, clickable}) {
             <img src={item.image} alt={`${item.title} icon`}/>
             <div className={styles.content}>
               <button className={styles.acessButton}>
-                <img src="assets/img/projects/link.svg"/>
+                <img src="/assets/img/projects/link.svg"/>
               </button>
               <h2>{item.title}</h2>
               {isLink

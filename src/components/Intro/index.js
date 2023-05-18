@@ -4,26 +4,26 @@ export default function Intro() {
     {
       "socialMedia":"GitHub",
       "username":"bhS1lva",
-      "img":"assets/img/intro/github.svg",
+      "img":"/assets/img/intro/github.svg",
       "link":"https://github.com/bhS1lva?tab=repositories"
     },
     {
       "socialMedia":"Email",
       "username":"bhfs.contato@gmail.com",
-      "img":"assets/img/intro/mail.svg",
+      "img":"/assets/img/intro/mail.svg",
       "link":"mailto:bhfs.contato@gmail.com"
     },
     {
       "socialMedia":"Linkedin",
       "username":"Bruno Henrique",
-      "img":"assets/img/intro/linkedin.svg",
+      "img":"/assets/img/intro/linkedin.svg",
       "link":"https://www.linkedin.com/in/bruno-henrique-902845203/"
     }
   ]
   return (
     <section className={`${styles.introBox}`}>
       <div className={styles.leftBox}>
-        <img src="assets/img/intro/BrunoHenrique.png" alt="Bruno Henrique picture"/>
+        <img src="/assets/img/intro/BrunoHenrique.png" alt="Bruno Henrique picture"/>
       </div>
       <div className={styles.rightBox}>
         <h1>Olá, me chamo <b>Bruno Henrique!</b></h1>
@@ -40,7 +40,7 @@ export default function Intro() {
         </div>
       </div>
       <a href="#Sobre mim" className={styles.scrollButton}>
-        <img src="assets/img/intro/chevron.svg"/>
+        <img src="/assets/img/intro/chevron.svg"/>
       </a>
     </section>
   )

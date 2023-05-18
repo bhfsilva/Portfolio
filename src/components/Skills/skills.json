@@ -1,65 +1,65 @@
 [
   {
     "title":"Front-end",
-    "image":"assets/img/skills/frontend/frontEndIcon.svg",
+    "image":"/assets/img/skills/frontend/frontEndIcon.svg",
     "desc":[
       {
         "title":"React",
-        "image":"assets/img/skills/frontend/react.svg"
+        "image":"/assets/img/skills/frontend/react.svg"
       },
       {
         "title":"Svelte",
-        "image":"assets/img/skills/frontend/svelte.svg"
+        "image":"/assets/img/skills/frontend/svelte.svg"
       },
       {
         "title":"NextJS",
-        "image":"assets/img/skills/frontend/nextjs.svg"
+        "image":"/assets/img/skills/frontend/nextjs.svg"
       }
     ]
   },
   {
     "title":"DevOps",
-    "image":"assets/img/skills/devops/devopsIcon.svg",
+    "image":"/assets/img/skills/devops/devopsIcon.svg",
     "desc":[
       {
         "title":"Git",
-        "image":"assets/img/skills/devops/git.svg"
+        "image":"/assets/img/skills/devops/git.svg"
       },
       {
         "title":"PowerShell",
-        "image":"assets/img/skills/devops/powershell.svg"
+        "image":"/assets/img/skills/devops/powershell.svg"
       },
       {
         "title":"Bash",
-        "image":"assets/img/skills/devops/shellscript.svg"
+        "image":"/assets/img/skills/devops/shellscript.svg"
       }
     ]
   },
   {
     "title":"Prototipagem",
-    "image":"assets/img/skills/design/designIcon.svg",
+    "image":"/assets/img/skills/design/designIcon.svg",
     "desc":[
       {
         "title":"Figma",
-        "image":"assets/img/skills/design/figma.svg"
+        "image":"/assets/img/skills/design/figma.svg"
       },
       {
         "title":"Photoshop",
-        "image":"assets/img/skills/design/photoshop.svg"
+        "image":"/assets/img/skills/design/photoshop.svg"
       }
     ]
   },
   {
     "title":"Back-end",
-    "image":"assets/img/skills/backend/backendIcon.svg",
+    "image":"/assets/img/skills/backend/backendIcon.svg",
     "desc":[
       {
         "title":"Python",
-        "image":"assets/img/skills/backend/python.svg"
+        "image":"/assets/img/skills/backend/python.svg"
       },
       {
         "title":"TypeScript",
-        "image":"assets/img/skills/backend/typescript.svg"
+        "image":"/assets/img/skills/backend/typescript.svg"
       }
     ]
   }

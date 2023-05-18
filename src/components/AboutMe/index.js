@@ -18,13 +18,13 @@ export default function AboutMe() {
           </p>
           <div className={styles.downloadBox}>
             <h2>Para mais informações:</h2>
-            <a href="assets/Bruno Henrique Fernandes da Silva.pdf" download>
-              <img src="assets/img/aboutMe/download.svg" alt="Download icon"/>
+            <a href="/assets/Bruno Henrique Fernandes da Silva.pdf" download>
+              <img src="/assets/img/aboutMe/download.svg" alt="Download icon"/>
               <p>Baixar currículo</p>
             </a>
           </div>
         </div>
-        <img src="assets/img/aboutMe/aboutMe.svg" alt="Drawing of a white man with black hair in a yellow sweater and black pants using the computer"/>
+        <img src="/assets/img/aboutMe/aboutMe.svg" alt="Drawing of a white man with black hair in a yellow sweater and black pants using the computer"/>
       </div>
     </section>
   )

@@ -142,7 +142,11 @@
   font-size: 1.4rem;
   color: var(--black);
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
+}
+.gridBox .content p{
+  width: 20rem;
 }
 .gridBox .acessButton{
   position: absolute;
@@ -203,6 +207,9 @@
   .gridBox .content{
     width: 230px;
     margin-bottom: 25px;
+  }
+  .gridBox .content p{
+    width: initial;
   }
 }
 @media(max-width:505px){

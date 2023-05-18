@@ -6,7 +6,7 @@ export default function Navbar() {
   const options = ['Sobre mim','Conhecimentos','Projetos'];
   return (
     <header className={styles.header}>
-      <img src="assets/img/navbar/BH.svg" alt="Logo BH"/>
+      <img src="/assets/img/navbar/BH.svg" alt="Logo BH"/>
       <nav className={`${styles.menu} ${showMenu?`${styles.show}`:''}`}>
         <ul>
           {options.map(opt => (
