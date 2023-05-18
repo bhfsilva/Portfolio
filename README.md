@@ -1,6 +1,6 @@
 # Meu portfólio 
 
-<img width="200" src="https://github.com/bhS1lva/Portfolio/assets/101880543/55511fe7-dc1b-4b67-bac1-37d7bd3593ae"></img>
+![badge concluido](https://github.com/bhS1lva/Portfolio/assets/101880543/e309d553-701c-4a4d-92cc-81be4b47bbee)
 
 ### 📝 Sobre o projeto
 
