@@ -1,6 +1,6 @@
 # Meu portfólio 
 
-<img width="200" src="https://user-images.githubusercontent.com/101880543/205789032-f11f777f-6ab0-40c5-9681-5b1098a8edff.png"></img>
+<img width="200" src="https://github.com/bhS1lva/Portfolio/assets/101880543/55511fe7-dc1b-4b67-bac1-37d7bd3593ae"></img>
 
 ### 📝 Sobre o projeto
 
