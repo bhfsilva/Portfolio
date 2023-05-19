@@ -7,6 +7,7 @@
 .aboutMe div > img{
   width: 40%;
   min-width: 500px;
+  max-width: 600px;
 }
 .textBox{
   display: flex;
