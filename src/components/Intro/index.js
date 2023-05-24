@@ -17,7 +17,7 @@ export default function Intro() {
       "socialMedia":"Linkedin",
       "username":"Bruno Henrique",
       "img":"/assets/img/intro/linkedin.svg",
-      "link":"https://www.linkedin.com/in/bruno-henrique-902845203/"
+      "link":"https://www.linkedin.com/in/bhS1lva/"
     }
   ]
   return (
