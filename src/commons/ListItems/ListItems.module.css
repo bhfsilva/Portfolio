@@ -28,7 +28,7 @@
 .mainBox:has(.skillsBox){
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 25px;
+  grid-gap: 25px;
   justify-content: center;
 }
 .mainBox:has(.skillsBox) button{
@@ -36,6 +36,13 @@
 }
 .listBox:is(div){
   text-align: center;
+  width: 100%;
+}
+.mainBox:has(.skillsBox) .lastItem {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: fit-content;
+  justify-self: center;
 }
 .listBox:is(div) > img{
   width: 60px;
@@ -45,13 +52,21 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
 }
 .skillsBox{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .skillsBox div{
   padding: 15px 15px 0px 15px;
+}
+.skillsBox div:first-child{
+  padding-left: 0px;
+}
+.skillsBox div:last-child{
+  padding-right: 0px;
 }
 .skillsBox img {
   width: 50px;
@@ -193,6 +208,11 @@
 @media(max-width:910px){
   .mainBox:has(.skillsBox){
     grid-template-columns: repeat(1, auto);
+  }
+  .mainBox:has(.skillsBox) .lastItem {
+    grid-column-start: unset;
+    grid-column-end: unset;
+    width: 100%;
   }
 }
 @media(max-width:550px){
