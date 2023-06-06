@@ -62,5 +62,15 @@
         "image":"/assets/img/skills/backend/typescript.svg"
       }
     ]
+  },
+  {
+    "title":"Banco de dados",
+    "image":"/assets/img/skills/database/database.svg",
+    "desc":[
+      {
+        "title":"MySQL",
+        "image":"/assets/img/skills/database/mysql.svg"
+      }
+    ]
   }
 ]
