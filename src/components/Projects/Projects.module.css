@@ -23,7 +23,7 @@
 .filterBox .active{
   background-color: var(--yellow);
 }
-@media(max-width:506px){
+@media(max-width:526px){
   .filterBox{
     display: none;
   }

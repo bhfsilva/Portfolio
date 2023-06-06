@@ -12,6 +12,8 @@ export default function ListItems({source, clickable}) {
 
   const listSize = source.length;
 
+  const [playGif, setPlayGif] = useState(null);
+
   return (
     <div className={styles.mainBox}>  
       <button className={styles.listViewButton} onClick={() => setActive(!activeGrid)}>
@@ -24,8 +26,13 @@ export default function ListItems({source, clickable}) {
               className={activeGrid?`${styles.gridBox}`:`${styles.listBox}`}
               href={isLink?`${item.url}`:undefined}
               {...isLink && {...linkProps}}
+              onMouseEnter={() => setPlayGif(index)}
+              onMouseLeave={() => setPlayGif(null)}
             >
-              <img src={item.image} alt={`${item.title} icon`}/>
+              {isLink && playGif === index?
+                <img src={item.gif} alt={item.title} loading='lazy'/>:
+                <img src={item.image} alt={item.title}/>
+              }
               <div className={styles.content}>
                 <button className={styles.acessButton}>
                   <img src="/assets/img/projects/link.svg"/>

@@ -1,7 +1,8 @@
 [
   {
     "title":"Projeto Galeria Duas Faces",
-    "image":"/assets/img/projects/duasFaces.png",
+    "image":"/assets/img/projects/duasFaces/duasFacesCover.png",
+    "gif":"/assets/img/projects/duasFaces/duasFacesExample.gif",
     "url":"https://galeriaduasfaces.vercel.app/",
     "desc":"Projeto do site de uma galeria de artes.",
     "releaseDate":"2023-05-12",
@@ -9,7 +10,8 @@
   },
   {
     "title":"Projeto Repo Keeper",
-    "image":"/assets/img/projects/repoKeeper.png",
+    "image":"/assets/img/projects/repoKeeper/repoKeeperCover.png",
+    "gif":"/assets/img/projects/repoKeeper/repoKeeperExample.gif",
     "url":"https://projeto-repo-keeper.vercel.app/",
     "desc":"Guardador de referências a repositórios do GitHub.",
     "releaseDate":"2023-02-13",
@@ -17,7 +19,8 @@
   },
   {
     "title":"Portfólio [antigo]",
-    "image":"/assets/img/projects/portfolioAntigo.png",
+    "image":"/assets/img/projects/portfolioAntigo/portfolioAntigoCover.png",
+    "gif":"/assets/img/projects/portfolioAntigo/portfolioAntigoExample.gif",
     "url":"https://bhs1lva.github.io/Portfolio-Antigo/",
     "desc":"Meu antigo portfólio usado para apresentações.",
     "releaseDate":"2022-09-21",
@@ -25,7 +28,8 @@
   },
   {
     "title":"Projeto Portal SP",
-    "image":"/assets/img/projects/portalSP.png",
+    "image":"/assets/img/projects/portalSP/portalSPCover.png",
+    "gif":"/assets/img/projects/portalSP/portalSPExample.gif",
     "url":"https://bhs1lva.github.io/Projeto-Portal-de-Noticias/",
     "desc":"Portal de notícias sobre a cidade de São Paulo.",
     "releaseDate":"2022-08-18",
@@ -33,7 +37,8 @@
   },
   {
     "title":"Projeto Nutri",
-    "image":"/assets/img/projects/nutri.png",
+    "image":"/assets/img/projects/nutri/nutriCover.png",
+    "gif":"/assets/img/projects/nutri/nutriExample.gif",
     "url":"https://bhs1lva.github.io/Projeto-Cadastro-Nutricionista/",
     "desc":"Site para cadastro de pacientes de nutricionista.",
     "releaseDate":"2022-07-19",

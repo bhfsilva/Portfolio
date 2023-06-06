@@ -95,13 +95,11 @@
   width: 35px;
 }
 .listViewButton:hover::before{
-  content: 'Change list format';
+  content: 'Mude o formato da lista';
   position: absolute;
   font-family: 'Roboto Condensed', sans-serif;
-  left: -160px;
-  top: 10px;
-  display: flex;
-  align-items: center;
+  left: -200px;
+  top: 6px;
   font-size: 20px;
 }
 .listBox:is(a){
@@ -109,12 +107,14 @@
   gap: 20px;
   position: relative;
 }
-.listBox:is(a:hover), .gridBox:hover{
-  transform: scale(1.1);
-}
 :is(.listBox:is(a) > img, .gridBox > img) {
   width: 250px;
+  height: 140px;
   border: 1px solid var(--black);  
+  transition: 0.3s;
+}
+:is(.listBox:is(a), .gridBox):hover :is(.listBox:is(a) > img, .gridBox > img) {
+  transform: scale(1.1);
 }
 .listBox:is(a) .content{
   display: flex;
@@ -135,6 +135,9 @@
 }
 .listBox:is(a) .acessButton::before{
   content: 'Acesse';
+}
+:is(.listBox:is(a:hover), .gridBox:hover){
+  background-color: #F4F0CD;
 }
 /* clickable GridBoxOption */
 .mainBox:has(.gridBox){
@@ -178,9 +181,6 @@
   }
 }
 @media(max-width:940px){
-  .listViewButton{
-    display: none;
-  }
   .listBox:is(a){
     gap: 15px;
     flex-direction: column;
@@ -198,9 +198,6 @@
   .listBox:is(a:hover), .gridBox:hover{
     transform: scale(1);
   }
-  :is(.listBox:is(a:hover), .gridBox:hover) .acessButton {
-    background-color: var(--darker-yellow);
-  }
   .listBox:is(a) .acessButton::before{
     display: none;
   }
@@ -213,6 +210,11 @@
     grid-column-start: unset;
     grid-column-end: unset;
     width: 100%;
+  }
+}
+@media(max-width:644px){
+  .listViewButton{
+    display: none;
   }
 }
 @media(max-width:550px){
