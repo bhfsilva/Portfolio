@@ -28,7 +28,7 @@ export default function Contact() {
   const formItems = [
     {tagName:"input", type:"text", holder:"Insira seu nome", varValue:name, setFunction:setName},
     {tagName:"input", type:"email", holder:"Insira seu email", varValue:email, setFunction:setEmail},
-    {tagName:"textarea", holder:"Envie uma mensagem", varValue:message, setFunction:setMessage}
+    {tagName:"textarea", holder:"Deixe um comentário", varValue:message, setFunction:setMessage}
   ]
 
   return (
@@ -40,7 +40,7 @@ export default function Contact() {
         </div>
         <hr/>
         <form className={styles.formBox} onSubmit={(event) => submitForm(event)}>
-          <h1>Me envie uma mensagem!</h1>
+          <h1>Deixe um comentário!</h1>
           {formItems.map((item,index) => (
             <item.tagName
               key={index}

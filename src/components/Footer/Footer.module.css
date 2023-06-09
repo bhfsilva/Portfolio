@@ -1,7 +1,37 @@
-.Footer{
-  /* background-color: var(--yellow); */
-  border-top: 2px solid var(--yellow);
+.footer{
+  background-color: var(--yellow);
   display: flex;
-  justify-content: space-between;
   padding: 20px 60px;
+  justify-content: center;
+  font-size: 1.3em;
+  position: relative;
+}
+.footer div a{
+  color: var(--black);
+  text-decoration: underline;
+}
+.toTop{
+  position: absolute;
+  top: 12px;
+  right: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.toTop img{
+  height: fit-content;
+  width: 45px;
+  rotate: 180deg;
+  filter: brightness(0);
+}
+.toTop:hover::before{ 
+  content: 'Ir para o topo';
+  font-weight: bold;
+  margin: 0px 10px 5px 0px;
+  color: var(--black);
+}
+@media (max-width: 800px){
+  .toTop::before{ 
+    display: none;
+  }
 }

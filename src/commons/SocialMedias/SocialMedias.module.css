@@ -65,6 +65,9 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
+  .contactContentBox :nth-child(2){
+    order: 2;
+  }
 }
 @media(max-width: 744px){
   :is(.socialMedia, .contactSocialMedia) p{
@@ -100,6 +103,8 @@
   .socialMedia p{
     display: unset;
   }
+}
+@media (max-width: 509px){
   .contactSocialMedia h1{
     font-size: 1.3em;
   }
