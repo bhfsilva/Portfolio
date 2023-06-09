@@ -30,36 +30,6 @@
   font-weight: normal;
   background-color: var(--yellow);
 }
-.contentBox{
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.info{
-  display:flex;
-  flex-flow:column;
-  justify-content:space-between;
-  align-items:center;
-  text-decoration:none;
-  color:var(--black);
-  transition:0.3s;
-  height: 190px;
-}
-.info:hover{
-  filter:invert(80%) sepia(80%) saturate(268%) brightness(95%) contrast(91%);
-}
-.info img{
-  width: 6.3em;
-  aspect-ratio: 1;
-}
-.info h1{
-  font-size:2.3rem;
-}
-.info p{
-  color:var(--gray);
-  font-size:1.8rem;
-}
 .scrollButton{
   position: absolute;
   bottom: 40px;
@@ -78,23 +48,17 @@
     width: 300px;
   }
 }
+@media(max-width: 1096px){
+  .rightBox > h1{
+    font-size:3.3rem;
+  }
+}
 @media(max-width: 1053px){
   .scrollButton{
     display: none;
   }
 }
-@media(max-width: 1096px){
-  .rightBox > h1{
-    font-size:3.3rem;
-  }
-  .info{
-    height: auto;
-  }
-  .info img{
-    width: 5em;
-  }
-}
-@media(max-width: 744px){
+@media(max-width: 930px){
   .leftBox{
     margin-top: 45px;
   }
@@ -104,8 +68,10 @@
   .rightBox > h1{
     font-size:3rem;
   }
-  .info p{
-    display: none;
+}
+@media(max-width: 675px){
+  .leftBox{
+    margin-top: 0px;
   }
 }
 @media(max-width: 500px){
@@ -122,38 +88,4 @@
   .rightBox > h1{
     font-size: 2rem;
   }
-  .contentBox{
-    flex-direction: column;
-    gap: 10px;
-  }
-  .info{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 30px;
-  }
-  .info div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: inherit;
-  }
-  .info img{
-    width: 3.6em;
-  }
-  .info p{
-    display: unset;
-  }
 }
-@media (max-width: 465px){
-  .contentBox{
-    gap: 25px;
-  }
-  .info{
-    align-items: center;
-    width: 250px;
-  }
-  .info p{
-    display: none;
-  }
-} 

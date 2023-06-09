@@ -14,7 +14,7 @@ export default function Projects() {
     });
   });
 
-  const filters = ['Todos', ...dynamicFilters, 'Mais antigos'];
+  const filters = [...dynamicFilters, 'Mais antigos'];
 
   const [filteredJSON, setFilteredJSON] = useState(projects);
 

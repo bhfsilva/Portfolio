@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const options = ['Sobre mim','Conhecimentos','Projetos'];
+  const options = ['Sobre mim','Conhecimentos','Projetos','Contato'];
   return (
     <header className={styles.header}>
       <img src="/assets/img/navbar/BH.svg" alt="Logo BH"/>
@@ -17,7 +17,9 @@ export default function Navbar() {
         </ul>  
       </nav>
       <button className={styles.menuButton} onClick={() => setShowMenu(!showMenu)}>
-        {options.map(opt => <div key={opt}/>)}
+        <div/>
+        <div/>
+        <div/>
       </button>   
     </header>
   )

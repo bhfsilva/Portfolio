@@ -1,0 +1,7 @@
+.Footer{
+  /* background-color: var(--yellow); */
+  border-top: 2px solid var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}

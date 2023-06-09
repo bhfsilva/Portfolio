@@ -1,0 +1,75 @@
+.contactBox{
+  display: flex;
+  justify-content: center;
+}
+.contactBox fieldset{
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid var(--yellow);
+  padding: 40px 20px;
+  border-radius: 5px;
+  width: 90%;
+}
+.contactBox hr{
+  border: 1px solid var(--darker-yellow);
+}
+.formBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 25em;
+}
+.formBox :is(input, textarea, button){
+  background-color: #F1EDDA;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+}
+.formBox input{
+  height: 50px;
+}
+.formBox textarea{
+  height: 150px;
+  resize: none;
+}
+.formBox button{
+  cursor: pointer;
+  border: 2px solid var(--darker-yellow);
+  background-color: var(--yellow);
+  padding: 10px 20px;
+  align-self: self-start;
+  transition: 0.3s;
+}
+.formBox button:hover{
+  background-color: var(--darker-yellow);
+}
+.formBox :is(input, textarea):focus{
+  outline: none;
+}
+@media(max-width: 900px){
+  .contactBox fieldset{
+    flex-direction: column;
+  }
+  .contactBox hr{
+    margin: 30px 20px;
+  }
+  .formBox{
+    width: 100%;
+    padding: 0px 25px;
+  }
+}
+@media(max-width: 570px){
+  .formBox h1{
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media(max-width: 458px){
+  .contactBox legend{
+    font-size: 2em;
+    text-align: center;
+  }
+}

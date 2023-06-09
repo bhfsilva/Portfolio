@@ -7,9 +7,6 @@
   position: relative;
   padding:0px 80px;
 }
-.menu{
-  width:560px;
-}
 .menuButton{
   display:none;
   border:none;
@@ -33,8 +30,8 @@
   width:50px;
 }
 .menu ul{
-  display:flex;
-  justify-content:space-around;
+  display: flex;
+  gap: 35px;
 }
 .menu li{
   list-style:none;
@@ -47,7 +44,7 @@
 .menu a:hover{
   text-decoration:underline;
 }
-@media(max-width: 744px){
+@media(max-width: 930px){
   .menu{
     z-index: 1;
     position: absolute;
@@ -56,19 +53,19 @@
     display: flex;
     width: 100%;
     background-color:rgba(232, 214, 118, 0.5);
-    padding: 10px 0px;  
+    padding: 10px;  
   }
   .menu ul{
     width: inherit;
     justify-content: space-around;
   }
 }
-@media(max-width: 500px){
+@media(max-width: 675px){
   .header{
     padding: 0 40px;
   }
   .menu.show{
-    height: 200px;
+    height: 300px;
     visibility: visible;
   }
   .menu{
@@ -80,14 +77,21 @@
     z-index: 1;
   }
   .menu ul{
-    flex-direction: column;
-    padding: 15px 20px;
+    flex-direction: column; 
+    gap: 0px;
+    padding: 15px 30px;
   }
-  .menu li:nth-child(2){
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    padding: 10px 0px;
-  } 
+  .menu li{
+    border-bottom: 1px solid black;
+    padding: 15px 0px;
+  }
+  .menu li:first-child{
+    padding-top: 0px;
+  }
+  .menu li:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
   .menuButton{
     display: flex;
     flex-direction: column;
