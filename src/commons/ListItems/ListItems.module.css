@@ -9,7 +9,7 @@
   color: var(--darker-yellow);
   font-size: 2.1rem;
 }
-.acessButton{
+.acessTag{
   position: absolute;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
   grid-gap: 25px;
   justify-content: center;
 }
-.mainBox:has(.skillsBox) button{
+.mainBox:has(.skillsBox) .acessTag{
   display: none;
 }
 .listBox:is(div){
@@ -113,8 +113,8 @@
   border: 1px solid var(--black);  
   transition: 0.3s;
 }
-:is(.listBox:is(a), .gridBox):hover :is(.listBox:is(a) > img, .gridBox > img) {
-  transform: scale(1.1);
+:is(.listBox:is(a), .gridBox):hover {
+  background-color: #F4F0CD;
 }
 .listBox:is(a) .content{
   display: flex;
@@ -125,19 +125,18 @@
   color: var(--black);
   width: 520px; 
 }
-.listBox:is(a) .acessButton{
+.listBox:is(a) .acessTag{
   top: 15px;
   right: 15px;
   font-size: 1rem;
 }
-.listBox:is(a) .acessButton img{
+.listBox:is(a) .acessTag img{
   width: 40px;
 }
-.listBox:is(a) .acessButton::before{
+.listBox:is(a) .acessTag::before{
   content: 'Acesse';
-}
-:is(.listBox:is(a:hover), .gridBox:hover){
-  background-color: #F4F0CD;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2em;
 }
 /* clickable GridBoxOption */
 .mainBox:has(.gridBox){
@@ -166,13 +165,13 @@
 .gridBox .content p{
   width: 20rem;
 }
-.gridBox .acessButton{
+.gridBox .acessTag{
   position: absolute;
   top: 15px;
   right: 15px;
   display: flex;
 }
-.gridBox .acessButton img{
+.gridBox .acessTag img{
   width: 40px;
 }
 @media(max-width:1024px){
@@ -198,7 +197,7 @@
   .listBox:is(a:hover), .gridBox:hover{
     transform: scale(1);
   }
-  .listBox:is(a) .acessButton::before{
+  .listBox:is(a) .acessTag::before{
     display: none;
   }
 }

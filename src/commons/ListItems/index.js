@@ -34,9 +34,9 @@ export default function ListItems({source, clickable}) {
                 <img src={item.image} alt={item.title}/>
               }
               <div className={styles.content}>
-                <button className={styles.acessButton}>
+                <div className={styles.acessTag}>
                   <img src="/assets/img/projects/link.svg"/>
-                </button>
+                </div>
                 <h2>{item.title}</h2>
                 {isLink
                   ?<p>{item.desc}</p>

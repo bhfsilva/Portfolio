@@ -10,16 +10,12 @@ export default function Contact() {
   //Fiz uma requisição para a API do Next.JS porque a API do Notion não suporta o CORS
   //Caso a requisição para a API do Notion seja feita diretamente pelo componente, um erro de CORS será gerado
 
-  async function enviar(){
+  function submitForm(event){
+    event.preventDefault();
     fetch('/api',
       {headers:{'Content-Type':'application/json'},
       method:'POST',
-      body:JSON.stringify({author:name,contact:email,comment:message})}
-    );
-  }
-
-  function submitForm(event){
-    event.preventDefault();
+      body:JSON.stringify({author:name,contact:email,comment:message})});
     setName('');
     setEmail('');
     setMessage('');
@@ -48,9 +44,13 @@ export default function Contact() {
               placeholder={item.holder}
               value={item.varValue}
               onChange={(event) => item.setFunction(event.target.value)}
-              />
+              required
+            />
             ))}
-          <button type="submit" onClick={enviar}>Enviar</button>
+          <button
+            type="submit"
+            disabled={name && email && message ?false:true}
+          >Enviar</button>
         </form>
       </fieldset>
     </div>

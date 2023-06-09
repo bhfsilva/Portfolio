@@ -7,7 +7,7 @@
   justify-content: space-around;
   border: 3px solid var(--yellow);
   padding: 40px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   width: 90%;
 }
 .contactBox hr{
@@ -42,6 +42,13 @@
   padding: 10px 20px;
   align-self: self-start;
   transition: 0.3s;
+}
+.formBox button[disabled]{
+  opacity: 0.7;
+  cursor: no-drop;
+}
+.formBox button[disabled]:hover{
+  background-color: var(--yellow);
 }
 .formBox button:hover{
   background-color: var(--darker-yellow);
