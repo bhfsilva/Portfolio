@@ -11,6 +11,11 @@ export default function Skills() {
           line-height: 1.5em;
           padding: 40px;
         }
+        @media(max-width: 571px){
+          p{
+            text-align:center;
+          }
+        }
       `}</style>
       <h1 className="contentTitle">Conhecimentos</h1>  
       <p>Constantemente estudo e realizo projetos para aprimorar meus conhecimentos nas áreas.</p>

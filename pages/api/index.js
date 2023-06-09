@@ -2,6 +2,12 @@ const { Client } = require('@notionhq/client');
 
 const notion = new Client({auth:process.env.NOTION_KEY});
 
+export const config = {
+  api: {
+    externalResolver: true,
+  },
+}
+
 export default async (req,res) => {
   const resp = await notion.blocks.children.append({
     block_id:"69c02b393ca0440baab59b9aa49ab297",

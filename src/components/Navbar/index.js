@@ -10,7 +10,7 @@ export default function Navbar() {
       <nav className={`${styles.menu} ${showMenu?`${styles.show}`:''}`}>
         <ul>
           {options.map(opt => (
-            <li key={opt}>
+            <li key={opt} onClick={() => setShowMenu(false)}>
               <a href={`#${opt}`}>{opt}</a>
             </li>
           ))}

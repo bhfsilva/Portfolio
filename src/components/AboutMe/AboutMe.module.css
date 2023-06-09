@@ -83,3 +83,13 @@
     font-size: 1.3em;
   }
 }
+@media(max-width: 496px){
+  .textBox p{
+    text-align:center;
+  }
+}
+@media(max-width: 430px){
+  .downloadBox{
+    margin-top: 5px;
+  }
+}
