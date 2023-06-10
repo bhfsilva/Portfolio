@@ -30,7 +30,7 @@ export default function ListItems({source, clickable}) {
               onMouseLeave={() => setPlayGif(null)}
             >
               {isLink && playGif === index?
-                <img src={item.gif} alt={item.title} loading='lazy'/>:
+                <img src={item.gif} alt={item.title}/>:
                 <img src={item.image} alt={item.title}/>
               }
               <div className={styles.content}>
