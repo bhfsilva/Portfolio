@@ -6,7 +6,7 @@
 
 * Projeto inteiramente realizado de forma independente;
 * Trata-se do meu portfólio para apresentações;
-* <strong>Tecnologias usadas</strong>: `⚫ Next.JS`
+* <strong>Tecnologias usadas</strong>: `⚫ Next.JS` `📑 Notion API`.
 
 <img align="right" width="150" src="https://media.discordapp.net/attachments/1012493604599631875/1030332222215049257/portfolioGIF.gif">
 
