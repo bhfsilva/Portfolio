@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
 import SocialMedias from 'src/commons/SocialMedias';
-export default function Contact() {
+export default function Contact({contatoID}) {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -28,7 +28,7 @@ export default function Contact() {
   ]
 
   return (
-    <div className={`${styles.contactBox} defaultMargin`} id="Contato">
+    <div className={`${styles.contactBox} defaultMargin`} id={contatoID}>
       <fieldset >
         <legend className='contentTitle'>Entre em contato!</legend>
         <div className={styles.infoBox}>

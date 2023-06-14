@@ -7,15 +7,16 @@ import Contact from 'src/components/Contact';
 import Footer from 'src/components/Footer';
 
 export default function Home() {
-    return(
-      <> 
-        <Navbar/>
-        <Intro/>
-        <AboutMe/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
-      </> 
-    )
+  const navbarIDs = ['sobre-mim', 'conhecimentos', 'projetos', 'contato']
+  return(
+    <> 
+      <Navbar options={navbarIDs}/>
+      <Intro sobreMimID={navbarIDs[0]}/>
+      <AboutMe sobreMimID={navbarIDs[0]}/>
+      <Skills conhecimentosID={navbarIDs[1]}/>
+      <Projects projetosID={navbarIDs[2]}/>
+      <Contact contatoID={navbarIDs[3]}/>
+      <Footer/>
+    </> 
+  )
 }

@@ -1,9 +1,9 @@
 import styles from './AboutMe.module.css';
-export default function AboutMe() {
+export default function AboutMe({sobreMimID}) {
   const birth = new Date("2003-10-15")
   const age = new Date(new Date() - birth).getFullYear() - 1970
   return (
-    <section id="Sobre mim" className={`${styles.aboutMe} defaultMargin`}>
+    <section id={sobreMimID} className={`${styles.aboutMe} defaultMargin`}>
       <h1 className="contentTitle">Sobre mim</h1>
       <div>
         <div className={styles.textBox}>

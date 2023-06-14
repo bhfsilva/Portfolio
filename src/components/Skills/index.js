@@ -1,9 +1,9 @@
 import ListItems from '../../commons/ListItems';
 import skills from './skills.json';
 
-export default function Skills() {
+export default function Skills({conhecimentosID}) {
   return (
-    <section className="defaultMargin" id="Conhecimentos">
+    <section className="defaultMargin" id={conhecimentosID}>
       <style jsx>{`
         p{
           font-size: 1.5em;

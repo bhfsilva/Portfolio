@@ -1,6 +1,6 @@
 import SocialMedias from 'src/commons/SocialMedias';
 import styles from './Intro.module.css';
-export default function Intro() {
+export default function Intro({sobreMimID}) {
   return (
     <section className={`${styles.introBox}`}>
       <div className={styles.leftBox}>
@@ -10,7 +10,7 @@ export default function Intro() {
         <h1>Olá, me chamo <b>Bruno Henrique!</b></h1>
         <SocialMedias/>
       </div>
-      <a href="#Sobre mim" className={styles.scrollButton}>
+      <a href={`#${sobreMimID}`} className={styles.scrollButton}>
         <img src="/assets/img/intro/chevron.svg"/>
       </a>
     </section>

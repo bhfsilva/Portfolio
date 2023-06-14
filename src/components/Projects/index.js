@@ -3,7 +3,7 @@ import projects from './projects.json'
 import styles from './Projects.module.css';
 import { useState } from "react";
 
-export default function Projects() {
+export default function Projects({projetosID}) {
   const dynamicFilters = [];
 
   projects.forEach(project => {
@@ -34,7 +34,7 @@ export default function Projects() {
     })
   };
   return (
-    <section className="defaultMargin" id="Projetos">
+    <section className="defaultMargin" id={projetosID}>
       <h1 className={`contentTitle ${styles.responsiveTitle}`}>Projetos</h1>
       <div className={styles.filterBox}>
         <h2>Filtros:</h2>

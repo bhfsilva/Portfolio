@@ -1,9 +1,8 @@
 import styles from './Navbar.module.css';
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({options}) {
   const [showMenu, setShowMenu] = useState(false);
-  const options = ['Sobre mim','Conhecimentos','Projetos','Contato'];
   return (
     <header className={styles.header}>
       <img src="/assets/img/navbar/BH.svg" alt="Logo BH"/>
@@ -11,7 +10,7 @@ export default function Navbar() {
         <ul>
           {options.map(opt => (
             <li key={opt} onClick={() => setShowMenu(false)}>
-              <a href={`#${opt}`}>{opt}</a>
+              <a href={`#${opt}`}>{opt.replace('-',' ')}</a>
             </li>
           ))}
         </ul>  
