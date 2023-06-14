@@ -21,8 +21,6 @@ export default function SocialMedias({contactSize}) {
     }
   ]
   
-  contactSize?info = [info[0],info[2],info[1]]:info=info;
-
   const styleType = contactSize?[styles.contactContentBox, styles.contactSocialMedia]:[styles.contentBox, styles.socialMedia];
 
   return (

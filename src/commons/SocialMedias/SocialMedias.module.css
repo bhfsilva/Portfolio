@@ -52,6 +52,9 @@
 .contactSocialMedia p{
   font-size: 1.3em;
 }
+.contactContentBox :nth-child(2){
+  order: 3;
+}
 @media(max-width: 1096px){
   .socialMedia{
     height: auto;
@@ -66,7 +69,7 @@
     justify-content: space-evenly;
   }
   .contactContentBox :nth-child(2){
-    order: 2;
+    order: initial;
   }
 }
 @media(max-width: 744px){
