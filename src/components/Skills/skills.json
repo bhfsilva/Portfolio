@@ -70,6 +70,10 @@
       {
         "title":"MySQL",
         "image":"/assets/img/skills/database/mysql.svg"
+      },
+      {
+        "title":"PostgreSQL",
+        "image":"/assets/img/skills/database/postgresql.svg"
       }
     ]
   }
