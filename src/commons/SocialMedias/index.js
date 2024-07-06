@@ -3,9 +3,9 @@ export default function SocialMedias({contactSize}) {
   let info = [
     {
       "socialMedia":"GitHub",
-      "username":"bhS1lva",
+      "username":"bhfsilva",
       "img":"/assets/img/intro/github.svg",
-      "link":"https://github.com/bhS1lva?tab=repositories"
+      "link":"https://github.com/bhfsilva?tab=repositories"
     },
     {
       "socialMedia":"Email",
